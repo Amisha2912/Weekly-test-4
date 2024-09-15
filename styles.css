@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height:100%;
+    width:100%;
+    max-width:100vw;
+    background-image: linear-gradient(90deg,rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(images/home-page.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.header{
+    position:fixed;
+    top:0;
+    z-index:3;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:2;
+    height:70px;
+    width:100vw;
+    background-color: #5A5A5A;
+    color:white;
+    padding:0 10vw;
+    position:sticky;
+    top:0;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    nav ol{
+        list-style-type: none;  
+        display:flex;
+        gap:30px;
+        font-size: 20px;
+        
+    }
+
+    nav ol a{
+        text-decoration: none;
+        color:white;
+        font-weight: 500;
+    }
+
+    nav ol a:hover{
+        color:rgba(0,0,0,0.3);
+    }
+
+    .logo{
+        font-size:1.5rem;
+        font-weight: 900;
+    }
+
+    .logo a{
+        text-decoration: none;
+        color:white;
+    }
+
+    .logo a:hover{
+        color:rgba(0,0,0,0.3);
+    }
+}
+
+.content{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align:center;
+
+    h1{
+        font-size: 60px;
+        font-weight: 700;
+        padding-bottom: 15px;
+        color:#fff;
+    }
+
+    p{
+        font-size:20px;
+        font-weight:400;
+        padding-bottom:50px;
+        padding:0 35px;
+        line-height: 30px;
+        color:#fff;
+    }
+
+    button{
+        padding:15px 20px;
+        background-color: #fff;
+        border:none;
+        border-radius: 10px;
+        font-size:18px;
+        margin:20px 0;
+    }
+
+    button a{
+        text-decoration: none;
+        color:black;
+    }
+
+    button:hover{
+        background-color: rgba(255,255,255,0.1);
+        border:1px solid white;
+    }
+}
+
+.services{
+    padding: 10vh 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    background-color: whitesmoke;
+    font-family: "Playpen Sans", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .heading{
+        text-align: center;
+        h2{
+            font-size:32px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size:16px;
+            font-weight: 400;
+        }
+    }
+
+    .list{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:20px 80px;
+    }
+
+    .item{
+        height:40vh;
+        max-width: 370px;
+        background-color: #fff;
+        /* border:2px solid black; */
+        border-radius: 5px;
+        margin:20px;
+        text-align: center;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Playpen Sans", system-ui;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        img{
+            height:120px;
+            width:120px;
+            border-radius:50%;
+            margin-bottom: 20px;
+        }
+
+        b{
+            text-align: center;
+            font-size: 18.72px;
+            font-weight:700;
+        }
+
+        p{
+            text-align: center;
+            padding:0 40px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.about{
+    padding:12vh 0;
+    background-color: whitesmoke;
+    font-family: "Playpen Sans", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .heading{
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 2rem;
+
+        h2{
+            font-size:32px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size:16px;
+            font-weight: 400;
+        }
+    }
+
+    .part{
+        padding:2vh 10vw;
+        
+
+        b{
+            line-height: 40px;
+            font-size: 18.72px;
+            font-weight: 700;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+    }
+}
+
+
+
+.contact{
+    background-color: whitesmoke;
+    padding: 10vh 0;
+    font-family: "Playpen Sans", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    & > .heading{
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 2rem;
+
+        h2{
+            font-size:32px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size:16px;
+            font-weight: 400;
+        }
+    }
+
+    .details{
+        display: flex;
+        justify-content: space-around;
+
+        .basic-details{
+            padding:5rem 0;
+        }
+
+
+
+        .basic-details p{
+            display: inline-block;
+            padding: 10px 0;
+            padding-left:10px;
+        }
+
+        .user-details{
+
+
+            input[type="text"],[type="email"]{
+                width:35vw;
+                height: 40px;
+                margin:15px 0;
+                font-family: "Playpen Sans", system-ui;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-size:18px;
+                font-weight: 500;
+                padding-left:10px;
+            }
+
+            textarea{
+                width:35vw;
+                height:150px;
+                margin:15px 0;
+                font-family: "Playpen Sans", system-ui;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-size:18px;
+                font-weight:500;
+                padding:10px;
+            }
+
+            ::placeholder {
+                font-size: 18px;
+                /* padding:10px; */
+                font-family: "Playpen Sans", system-ui;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+
+            button{
+                width:150px;
+                height:40px;
+                background-color: black;
+                color:#fff;
+                border-radius: 10px;
+                font-family: "Playpen Sans", system-ui;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+            
+        }
+    }
+
+}
+
+
+
+@media(max-width: 800px){
+    .navbar{
+        overflow:hidden;
+       
+        .logo{
+            margin-right: 60px;
+            margin-left:-40px;
+        }
+        
+    }
+
+
+    .services{
+
+        .list{
+            padding:10px 20px;
+        }
+
+        .item{
+            min-width:80vw;
+            margin:20px;
+        }
+    }
+
+    .contact{
+        .details{
+            display:flex;
+            flex-direction: column;
+
+
+            .basic-details{
+                padding:40px;
+            }
+
+            .user-details{
+                padding:40px;
+
+                input[type="text"],[type="email"]{
+                    width:80vw;
+                }
+
+                textarea{
+                    width:80vw;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+
+@media(max-width:400px){
+
+    .navbar{
+        justify-content: center;
+        /* width:100vw; */
+
+
+        nav ol{
+            display:none;
+        }
+
+        .logo a{
+            padding-left:20vw;
+        }
+    }
+
+    
+    
+
+}
